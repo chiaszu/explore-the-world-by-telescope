@@ -1,0 +1,144 @@
+/* body {
+  margin: 0px;
+  background-color: red;
+} */
+/* p,
+h3 {
+  font-family: "Merriweather";
+  color: white;
+} */
+
+.contact_container h3 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Merriweather";
+}
+
+.contact_container {
+  background: url(./contact3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex; */
+  /* width: 100%; */
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+#glass {
+  width: 100%;
+  /* background-color: rgba(0, 98, 132, 0.05); */
+  /* backdrop-filter: blur(6px); */
+  display: flex;
+  /* height: 85%; */
+}
+
+.author_container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  /* margin: 250px 50px 200px 15px; */
+  padding-left: 5%;
+}
+
+.author_container img {
+  width: 150px;
+}
+
+.message_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 50%;
+  height: 50%;
+  margin-top: 11%;
+  /* margin-bottom: 30%; */
+  /* margin: 250px 50px 200px 15px; */
+}
+
+.contact_container input {
+  display: block;
+  padding: 5px;
+  margin: 3px;
+}
+
+.message_container input {
+  font-family: Merriweather;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid whitesmoke;
+  color: white;
+}
+
+.message_container form {
+  text-align: -webkit-center;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+@media only screen and (max-width: 825px) {
+  .contact_container {
+    background: url(./contact2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    overflow: hidden;
+  }
+
+  #glass {
+    /* background-color: rgba(0, 98, 132, 0.05); */
+    /* backdrop-filter: blur(6px); */
+    display: block;
+    /* height: 85%; */
+  }
+
+  .author_container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-top: 15%; */
+    margin-bottom: 10%;
+    /* margin: 250px 50px 200px 15px; */
+    padding-left: 0;
+    margin-bottom: 3%;
+  }
+
+  .author_container img {
+    width: 95px;
+  }
+
+  .message_container {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10%;
+    /* display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: space-around;  */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 50%;
+    height: 50%;
+    margin-top: 11%; */
+    /* margin-bottom: 30%; */
+    /* margin: 250px 50px 200px 15px; */
+  }
+  form {
+    text-align: -webkit-center;
+  }
+
+  input {
+    font-family: Merriweather;
+  }
+}

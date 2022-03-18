@@ -1,0 +1,76 @@
+#menusection {
+  text-align: right;
+}
+#menu {
+  /* display: none; */
+  background-color: white;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  /* text-align: end; */
+  /* height:5vw; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#menu div {
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+#icondiv {
+  text-align: start;
+  height: 100%;
+  position: relative;
+  left: 0;
+}
+
+#icondiv a {
+  height: 100%;
+}
+
+#icondiv img {
+  /* text-align: left; */
+  /* height: 100%; */
+  /* min-height: 5vw; */
+  height: 30px;
+  /* height: 30px; */
+}
+
+#menu p {
+  display: inline-block;
+  margin: 0;
+  color: black;
+  font-family: "Merriweather", serif;
+  line-height: 2;
+}
+
+#logindiv {
+  z-index: 150;
+  position: fixed;
+  /* top:30px; */
+  /* left: 70%; */
+  width: 200px;
+  background-color: white;
+  /* color: black; */
+  text-align: right;
+  padding-right: 20px;
+}
+#logindiv p {
+  color: black;
+  font-family: "Merriweather", serif;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+}
+
+p#logintext {
+  padding: 0;
+}

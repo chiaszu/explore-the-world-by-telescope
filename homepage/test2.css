@@ -1,0 +1,17 @@
+.inbox p{
+    margin: 0;
+}
+
+#success a{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#portraitimg{
+  position: relative;
+  top: 3.5px;
+}

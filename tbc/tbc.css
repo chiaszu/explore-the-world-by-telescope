@@ -1,0 +1,27 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+
+h1{
+  font-family:  "Fredericka the Great";
+  font-size: 80px;
+  color: white;
+  font-weight: normal;
+}
+
+footer{
+  background-color: #2E5C6E;
+  text-align: center;
+  /* width: 100%; */
+
+}
+
+footer p{
+  font-family: "Fredericka the Great";
+  font-size: 20px;
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: white;
+}

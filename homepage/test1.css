@@ -1,0 +1,321 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#circle_div {
+  position: relative;
+  top: 12vw;
+  left: 35%;
+
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  /* height: 100%; */
+  border: 1px solid #2e5c6e;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+
+#insideshadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* position: relative;
+  top:-18.5vw;
+  left: 35%; */
+  /* top:10px; */
+  /* left: 10px; */
+  /* top:20%; */
+  /* left: 20%; */
+
+  /* overflow: hidden; */
+
+  width: 30vw;
+  height: 30vw;
+  /* height: 100%; */
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* backdrop-filter: blur(5px); */
+
+  z-index: 100;
+  transition: opacity 3s;
+  /* background-color: red; */
+}
+
+#insideshadow:hover {
+  /* animation: shadow_display 1s;
+  animation-fill-mode: forwards; */
+  opacity: 0%;
+}
+
+#circle_div img {
+  z-index: 99;
+  width: 100%;
+  position: relative;
+  top: 3vw;
+  /* bottom: 60vw; */
+  /* right: 30vw; */
+  /* height: 80vw; */
+}
+
+body {
+  background-color: black;
+  /* background-color: rgba(240, 169, 134); */
+  /* text-align: center; */
+  margin: 0;
+  text-align: center;
+}
+
+#Telescope {
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 15%;
+  width: 70%;
+  font-family: "Fredericka the Great";
+  font-size: 5vw;
+  z-index: 100;
+  line-height: 1;
+
+  background-color: rgba(46, 92, 110, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#section1 {
+  overflow: hidden;
+}
+
+@keyframes circleanimation {
+  from {
+    transform: scale(1, 1);
+    border: 1px #2e5c6e solid;
+  }
+  /* to{transform: scale(3.5, 3.5);} */
+  to {
+    transform: scale(4, 4);
+    border: 0 #2e5c6e solid;
+  }
+}
+
+.circle_transform {
+  /* border: 0 !important; */
+  animation: circleanimation 3.5s;
+  animation-fill-mode: forwards;
+}
+
+h2 {
+  color: white;
+  font-family: "Merriweather";
+}
+
+p {
+  color: white;
+  font-family: "Merriweather";
+  line-height: 2;
+}
+
+#todown {
+  width: 5vw;
+  display: none;
+  /* position: absolute; */
+  top: 67%;
+}
+
+#special_post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  /* padding-top: 5vw; */
+}
+
+#special_post h2 {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#special_post p {
+  text-align: left;
+  padding-left: 15px;
+  color: #d7c4bb;
+}
+
+#special_post div {
+  width: 300px;
+  overflow: hidden;
+  /* margin-bottom: 10vw; */
+}
+
+#special_post div img {
+  width: 100%;
+}
+
+.beensofartext {
+  font-family: "Merriweather";
+  text-align: left;
+  color: white;
+  position: relative;
+  left: 3vw;
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.beensofar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* justify-content: center;
+	align-items: center;
+	align-content: center;
+  overflow: hidden;
+  width: 100%; */
+}
+
+.beendivs {
+  display: inline-block;
+  width: 33%;
+  margin-bottom: 10px;
+  /* margin-left: 4%; */
+  position: relative;
+}
+
+.beendivl {
+  display: inline-block;
+  width: 66.5%;
+  /* height: 49.5%; */
+  /* margin-left: 4%; */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.beenimgs {
+  width: 100%;
+}
+
+.beenimgl {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .beendivs {
+    width: 100%;
+    margin-bottom: 10px;
+    /* margin-left: 4%; */
+  }
+
+  .beendivl {
+    width: 100%;
+    /* height: 49.5%; */
+    /* margin-left: 4%; */
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes rotateanimatebefore {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
+
+.changeimgbefore {
+  animation: rotateanimatebefore 2s;
+  animation-fill-mode: forwards;
+  /* display: none; */
+}
+@keyframes rotateanimateafter {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.changeimgafter {
+  animation: rotateanimateafter 1.25s;
+  animation-fill-mode: forwards;
+  /* display: none; */
+}
+
+#readmore {
+  float: right;
+  width: 200px;
+  border: 1px solid white;
+  position: relative;
+  right: 10px;
+}
+
+#readmore:hover {
+  border: 3px solid #81c7d4;
+  transform: translate(1.5px, -5px);
+}
+
+#beensofarouter {
+  padding-top: 2vw;
+  margin-top: 10vw;
+}
+
+#othersection a {
+  color: white;
+  text-decoration: none;
+}
+
+.beentextonimg {
+  position: absolute;
+  font-family: "Merriweather";
+  top: 35%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 25%;
+  width: 50%;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+}
+
+.beensofar p {
+  background-color: rgba(0, 98, 132, 0.05);
+  backdrop-filter: blur(5px);
+  color: white !important;
+}
+
+footer {
+  background-color: #2e5c6e;
+  text-align: center;
+  display: none;
+}
+
+footer p {
+  font-family: "Fredericka the Great";
+  font-size: 20px;
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#special_post div div:hover {
+  transform: translateY(-10px);
+}
+
+#special_post div div:hover p {
+  text-decoration: underline;
+}
+
+#special_post div div:hover h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 465px) {
+  .beensofartext {
+    font-size: 26px;
+  }
+}

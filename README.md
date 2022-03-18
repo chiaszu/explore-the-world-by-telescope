@@ -1,0 +1,2 @@
+# Telescope
+A blogger website.

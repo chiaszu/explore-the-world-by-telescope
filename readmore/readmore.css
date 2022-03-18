@@ -1,0 +1,145 @@
+
+body{
+  background-color: black;
+  /* background-color: rgba(240, 169, 134); */
+  /* text-align: center; */
+  margin: 0;
+  /* text-align: center; */
+  /* overflow: hidden; */
+}
+
+#article{
+  position: relative;
+  top:30px;
+  padding-left: 20px;
+}
+
+.singleouter img{
+  width: 350px;
+  padding-right: 30px;
+}
+
+.singleouter{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.besidecontain{
+  width: 300px;
+  text-align: left;
+
+  /* overflow: hidden; */
+}
+
+
+h2, p{
+  color: white;
+  font-family: "Merriweather";
+}
+
+.besidecontain p{
+  width: inherit;
+  /* font-size: 20px; */
+  line-height: 2;
+  word-wrap:break-word;
+  color: #D7C4BB;
+}
+
+
+.nonedisplay{
+  display: none;
+}
+
+.eandd{
+  /* position: relative; */
+  bottom: 30px;
+  right:20px;
+  /* top:100px; */
+  float: right;
+  /* display: none; */
+}
+
+.singleouter:hover  > .eandd{
+  /* display: inline; */
+  /* transform: translateX(10px); */
+}
+
+.eandd img{
+  display: inline-block;
+  margin: 5px;
+  height:30px;
+  width: 30px;
+  padding-right:0;
+}
+
+.eandd img:hover{
+  transform: translateY(-3px);
+}
+
+@media only screen and (min-width: 1000px){
+  #article{
+    /* position:relative; */
+    padding-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  #article{
+    /* position:relative; */
+    padding-left: 0;
+    padding-right: 0;
+    /* text-align: center; */
+  }
+
+  .singleouter{
+    display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .singleouter img{
+    width: 350px;
+    padding-right: 0;
+  }
+}
+
+footer{
+  background-color: #2E5C6E;
+  text-align: center;
+  /* display: none; */
+
+}
+
+footer p{
+  font-family: "Fredericka the Great";
+  font-size: 20px;
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.besidecontain:hover {
+    transform: translateY(-5px);
+}
+
+@media only screen and (max-width:500px) {
+  .eandd{
+    right:0;
+  }
+
+  .eandd img{
+    width: 30px;
+  }
+}
