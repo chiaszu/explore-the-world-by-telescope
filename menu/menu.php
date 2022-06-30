@@ -7,7 +7,7 @@
     </div>
     <div>
       <!-- <a href="homepage_fake.php#special_post">LASTEST POST</a> | -->
-      <a href="../homepage/homepage_fake.php#othersection">LASTEST POST</a> |
+      <a href="../homepage/homepage_fake.php#othersection">LATEST POST</a> |
       <a href="../homepage/homepage_fake.php#beensofarouter">BEEN SO FAR</a> |
       <a href="../homepage/homepage_fake.php#glass">CONTACT US</a> ||
       <p id="logintext"><img src="../menu/portrait.svg" id="portraitimg">
